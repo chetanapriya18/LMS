@@ -1,28 +1,11 @@
-import React from 'react';
-import { assets, dummyEducatorData } from '../../assets/assets';
-import { UserButton, useUser } from '@clerk/clerk-react';
-import { Link } from 'react-router-dom';
+import React from 'react'
 
 const Navbar = () => {
-  const educatorData = dummyEducatorData;
-  const { user } = useUser(); // Corrected "Tiser" to "user"
-
   return (
-    <div className='flex items-center justify-between px-4 md:px-8 border-b border-gray-500 py-3'>
-      <Link to='/'>
-        <img src={assets.logo} alt="Logo" className="w-10 lg:w-10" /> {/* Fixed typo: 1g -> lg */}
-      </Link>
-
-      <div className="flex items-center gap-5 text-gray-500 relative">
-        <p>Hi! {user ? user.fullName : 'Developer'}</p>
-        {user ? (
-          <UserButton />
-        ) : (
-          <img className='max-w-8' src={assets.profile_img} alt="Profile" />
-        )}
-      </div>
+    <div>
+      <h1>HI</h1>
     </div>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
