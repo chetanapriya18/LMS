@@ -37,3 +37,37 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
+
+@layer utilities {
+  .h-section-height {
+    height: 500px;
+  }
+
+  .min-h-section-height {
+    min-height: 500px;
+  }
+
+  .max-h-section-height {
+    max-height: 500px;
+  }
+
+  .p-section-height {
+    padding: 500px;
+  }
+
+  .pt-section-height {
+    padding-top: 500px;
+  }
+
+  .pb-section-height {
+    padding-bottom: 500px;
+  }
+
+  .mt-section-height {
+    margin-top: 500px;
+  }
+
+  .mb-section-height {
+    margin-bottom: 500px;
+  }
+}
