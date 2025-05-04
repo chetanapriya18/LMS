@@ -1,9 +1,12 @@
 import React from 'react'
-
+import { Outlet } from 'react-router-dom'
 const Educator = () => {
   return (
     <div>
-      <h1>HI</h1>
+      <h1>ed</h1>
+      <div>
+        {<Outlet />}
+      </div>
     </div>
   )
 }
